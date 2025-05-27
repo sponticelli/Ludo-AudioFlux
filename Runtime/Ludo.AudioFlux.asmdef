@@ -1,3 +1,14 @@
 {
-	"name": "Ludo.AudioFlux"
+	"name": "Ludo.AudioFlux",
+	"rootNamespace": "Ludo.AudioFlux",
+	"references": [],
+	"includePlatforms": [],
+	"excludePlatforms": [],
+	"allowUnsafeCode": false,
+	"overrideReferences": false,
+	"precompiledReferences": [],
+	"autoReferenced": true,
+	"defineConstraints": [],
+	"versionDefines": [],
+	"noEngineReferences": false
 }
