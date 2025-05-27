@@ -195,15 +195,29 @@ namespace Ludo.AudioFlux
             audioSource.maxDistance = soundDef.MaxDistance;
             audioSource.outputAudioMixerGroup = soundDef.MixerGroup;
 
-            // Handle positioning
-            if (playParams.position.HasValue)
+            // Handle positioning using the new enum-based approach
+            switch (playParams.PositionMode)
             {
-                audioSource.transform.position = playParams.position.Value;
-            }
-            else if (playParams.followTarget != null)
-            {
-                audioSource.transform.SetParent(playParams.followTarget);
-                audioSource.transform.localPosition = Vector3.zero;
+                case SoundPositionMode.AtPosition:
+                    audioSource.transform.position = playParams.Position;
+                    break;
+
+                case SoundPositionMode.FollowTarget:
+                    if (playParams.FollowTarget != null)
+                    {
+                        audioSource.transform.SetParent(playParams.FollowTarget);
+                        audioSource.transform.localPosition = Vector3.zero;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("FollowTarget is null but PositionMode is set to FollowTarget");
+                    }
+                    break;
+
+                case SoundPositionMode.Default:
+                default:
+                    // No special positioning - audio source remains at service position
+                    break;
             }
         }
 

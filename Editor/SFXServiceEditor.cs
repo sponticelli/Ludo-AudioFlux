@@ -90,12 +90,11 @@ namespace Ludo.AudioFlux
                 {
                     if (!string.IsNullOrEmpty(testSoundId))
                     {
-                        var playParams = new SoundPlayParams
-                        {
-                            position = testPosition,
-                            volumeMultiplier = testVolume,
-                            pitchMultiplier = testPitch
-                        };
+                        var playParams = new SoundPlayParamsBuilder()
+                            .AtPosition(testPosition)
+                            .WithVolume(testVolume)
+                            .WithPitch(testPitch)
+                            .Build();
                         sfxService.PlaySound(testSoundId, playParams);
                     }
                 }
