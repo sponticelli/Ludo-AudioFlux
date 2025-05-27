@@ -1,0 +1,22 @@
+{
+  "name": "com.liteninja.audioflux",
+  "version": "1.0.0",
+  "displayName": "Ludo AudioFlux",
+  "description": "A powerful, extensible audio system for Unity3D",
+  "unity": "2021.3",
+  "documentationUrl": "https://github.com/sponticelli/Ludo-AudioFlux/blob/main/README.md",
+  "changelogUrl": "https://github.com/sponticelli/Ludo-AudioFlux/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/sponticelli/Ludo-AudioFlux/blob/main/LICENSE",
+  "dependencies": {
+  },
+  "keywords": [
+    "ludo",
+    "audio",
+    "music",
+    "sfx"
+  ],
+  "author": {
+    "name": "Sandro Ponticelli",
+    "url": "https://github.com/sponticelli"
+  }
+}

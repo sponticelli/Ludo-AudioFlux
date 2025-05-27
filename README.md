@@ -1,6 +1,6 @@
 # Ludo-AudioFlux
 
-A powerful, extensible audio system for Unity3D that provides professional-grade music and sound effects management with zero breaking changes to existing code.
+A powerful, extensible audio system for Unity3D
 
 ## Overview
 
@@ -143,4 +143,3 @@ AudioFlux follows clean architecture principles:
 ## License
 
 This project is part of the Ludo framework for Unity development.
-
