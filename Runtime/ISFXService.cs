@@ -11,6 +11,7 @@ namespace Ludo.AudioFlux
         void StopAllSounds(float fadeOutTime = 0f);
         void SetGlobalVolume(float volume);
         void PauseAll();
+        bool IsPaused();
         void ResumeAll();
         bool IsPlaying(string soundId);
         void RegisterSound(string id, SoundDefinition soundDefinition);

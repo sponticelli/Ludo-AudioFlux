@@ -74,7 +74,7 @@ namespace Ludo.AudioFlux.Modules.Performance
             _listenerCamera = Camera.main;
             if (_listenerCamera == null)
             {
-                _listenerCamera = UnityEngine.Object.FindObjectOfType<Camera>();
+                _listenerCamera = UnityEngine.Object.FindFirstObjectByType<Camera>();
             }
 
             LogInfo("Audio LOD Module initialized");

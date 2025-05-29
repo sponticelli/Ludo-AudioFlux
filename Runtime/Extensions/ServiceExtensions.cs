@@ -181,7 +181,7 @@ namespace Ludo.AudioFlux.Extensions
 
         private static Vector3 GetListenerPosition()
         {
-            var listener = UnityEngine.Object.FindObjectOfType<AudioListener>();
+            var listener = UnityEngine.Object.FindFirstObjectByType<AudioListener>();
             if (listener != null)
             {
                 return listener.transform.position;
@@ -198,7 +198,7 @@ namespace Ludo.AudioFlux.Extensions
 
         private static AudioFluxModuleManager FindModuleManager()
         {
-            return UnityEngine.Object.FindObjectOfType<AudioFluxModuleManager>();
+            return UnityEngine.Object.FindFirstObjectByType<AudioFluxModuleManager>();
         }
     }
 

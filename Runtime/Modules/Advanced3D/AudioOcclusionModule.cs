@@ -54,7 +54,7 @@ namespace Ludo.AudioFlux.Modules.Advanced3D
             _listenerCamera = Camera.main;
             if (_listenerCamera == null)
             {
-                _listenerCamera = UnityEngine.Object.FindObjectOfType<Camera>();
+                _listenerCamera = UnityEngine.Object.FindFirstObjectByType<Camera>();
             }
 
             // Subscribe to advanced audio events

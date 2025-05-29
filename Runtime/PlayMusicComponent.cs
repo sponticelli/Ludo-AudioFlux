@@ -212,7 +212,7 @@ namespace Ludo.AudioFlux
                 return musicService;
             
             // Try to find MusicService in the scene
-            musicService = FindObjectOfType<MusicService>();
+            musicService = FindFirstObjectByType<MusicService>();
             return musicService;
         }
         

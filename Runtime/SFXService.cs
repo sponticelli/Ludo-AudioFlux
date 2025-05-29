@@ -21,6 +21,8 @@ namespace Ludo.AudioFlux
 
         private float _globalVolume = 1f;
         private bool _isPaused;
+        
+        
 
         private void Awake()
         {
@@ -312,6 +314,11 @@ namespace Ludo.AudioFlux
                     handle.audioSource.Pause();
                 }
             }
+        }
+        
+        public bool IsPaused()
+        {
+            return _isPaused;
         }
 
         public void ResumeAll()
