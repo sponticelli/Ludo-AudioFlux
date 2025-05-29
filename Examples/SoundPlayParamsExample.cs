@@ -16,7 +16,7 @@ namespace Ludo.AudioFlux.Examples
         {
             if (sfxService == null)
             {
-                sfxService = FindObjectOfType<SfxService>();
+                sfxService = FindFirstObjectByType<SfxService>();
             }
         }
 

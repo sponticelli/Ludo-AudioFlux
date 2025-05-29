@@ -25,7 +25,7 @@ namespace Ludo.AudioFlux
         {
             if (musicService == null)
             {
-                musicService = FindObjectOfType<MusicService>();
+                musicService = FindFirstObjectByType<MusicService>();
             }
             
             if (musicService == null)
